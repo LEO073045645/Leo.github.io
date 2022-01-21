@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>電腦版刮刮履歷</title>
+		<title>馬太新年大撒幣</title>
 		<style type="text/css">
 			#c1{
 				border: 1px solid white;
@@ -20,9 +20,9 @@
 	</head>
 	<body>
 		
-		<canvas id="c1" width="3000" height="5000"></canvas>
+		<canvas id="c1" width="30000" height="50000"></canvas>
 		
-		<canvas id="c2" width="3000" height="5000"></canvas>
+		<canvas id="c2" width="30000" height="50000"></canvas>
 		
 	</body>
 	<script type="text/javascript">
@@ -51,8 +51,8 @@
 		c1.ontouchstart = function(ev){
 		c1.ontouchmove = function(e){
 			console.log(e);
-			var w = 50;			// 清除筆刷的寬度
-			var h = 50;			// 清除筆刷的高度
+			var w = 500;			// 清除筆刷的寬度
+			var h = 500;			// 清除筆刷的高度
 			var x = e.pageX-c1.offsetLeft - w/2;    // 清除筆刷的x位置
 			var y = e.pageY-c1.offsetTop - h/2;		// 清除筆刷的y位置
 			ctx1.clearRect(x,y,w,h);
